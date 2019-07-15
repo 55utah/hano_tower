@@ -1,0 +1,46 @@
+
+.circle{
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #edeef3;
+    margin: 0 auto;
+}
+.tower{
+    box-sizing: border-box;
+    width: 200px;
+    height: 300px;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    margin-left: 20px;
+    border: #55b6ab 1px solid;
+    vertical-align: middle;
+    padding: 6px;
+}
+
+
+.tower:hover{
+    border: #55b6ab 4px solid;
+    padding: 3px;
+}
+.towerSelect::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border: transparent 8px solid;
+    border-bottom-color: #55b6ab;
+    position: absolute;
+    left: calc(50% - 8px);
+    bottom: -18px;
+}
+.hanTower{
+    min-width: 670px;
+    text-align: center;
+    width: fit-content;
+    margin: 80px auto;
+}
+.tip{
+    display: inline-block;
+    padding: 10px;
+}
